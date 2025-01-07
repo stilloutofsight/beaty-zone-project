@@ -1,0 +1,105 @@
+:root {
+    --color-primary-light: #2B7FFF;
+    --color-primary-dark: #011C44;
+    --color-primary-white: #FFFFFF;
+    --color-secondary-black: #000000;
+    --color-secondary-dark-grey: #4A4A4A;
+    --color-secondary-light-grey: #747272;
+    --color-secondary-dark-blue: #011F4A;
+}
+
+/* Base */
+body {
+    color: var(--color-primary-dark);
+}
+
+ul {
+    list-style-type: none;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Button */
+.button {
+    color: var(--color-primary-white);
+    background-color: var(--color-primary-light);
+    border: 2px solid var(--color-primary-light);
+    border-radius: 32px;
+}
+
+.button:hover {
+    color: var(--color-primary-dark);
+    background-color: transparent;
+}
+
+/* Link */
+.link-header {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+}
+
+.link-header:hover {
+    color: var(--color-primary-light);
+}
+
+.link-footer {
+    color: var(--color-primary-white);
+}
+
+/* Hero section */
+.hero-title {
+    color: var(--color-primary-light);
+}
+
+.hero-text {
+    color: var(--color-secondary-dark-grey);
+}
+
+/* Description section */
+
+.description-title .brand {
+    color: var(--color-primary-light);
+}
+
+/* Advantages section */
+.advantages-title .brand {
+    color: var(--color-primary-light);
+}
+
+.advantages-text {
+    color: var(--color-secondary-black);
+}
+
+/* Procedures section */
+.procedures-title .brand {
+    color: var(--color-primary-light);
+}
+
+.procedures-text {
+    color: var(--color-primary-white);
+}
+
+/* Contacts section */
+.contacts-title .brand {
+    color: var(--color-primary-light);
+}
+
+.contacts-text {
+    color: var(--color-primary-white);
+}
+
+.contacts-text .brand {
+    color: var(--color-primary-light);
+}
+
+/* Footer */
+.address-link {
+    color: var(--color-primary-white);
+    text-decoration: none;
+}
+
+.address-copyright {
+    color: var(--color-secondary-light-grey);
+}
