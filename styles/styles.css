@@ -1,3 +1,31 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Play';
+    font-weight: 400;
+    src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Play';
+    font-weight: 700;
+    src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url('../fonts/roboto-v32-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-weight: 500;
+    src: url('../fonts/roboto-v32-cyrillic_latin-500.woff2') format('woff2');
+}
+
 :root {
     --color-primary-light: #2B7FFF;
     --color-primary-dark: #011C44;
@@ -11,6 +39,9 @@
 /* Base */
 body {
     color: var(--color-primary-dark);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 ul {
@@ -27,52 +58,124 @@ address {
     background-color: var(--color-primary-light);
     border: 2px solid var(--color-primary-light);
     border-radius: 32px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17;
 }
 
 .button:hover {
     color: var(--color-primary-dark);
     background-color: transparent;
+    font-weight: 500;
+    line-height: 1.17;
 }
 
 /* Link */
 .link-header {
     color: var(--color-primary-dark);
     text-decoration: none;
+    line-height: 1.17;
 }
 
 .link-header:hover {
     color: var(--color-primary-light);
+    font-weight: 700;
+    line-height: 1.17;
 }
 
 .link-footer {
     color: var(--color-primary-white);
+    font-size: 16px;
+    line-height: 1.17;
+    text-decoration: none;
 }
 
 /* Hero section */
 .hero-title {
     color: var(--color-primary-light);
+    font-family: 'Play', sans-serif;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 0.81;
+    text-transform: capitalize;
+    text-align: left;
 }
 
-.hero-text {
+.hero-text1 {
+    line-height: 1.17;
+}
+
+.hero-text2 {
     color: var(--color-secondary-dark-grey);
+    font-size: 12px;
+    line-height: 1.5;
 }
 
 /* Description section */
+.description-title {
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.15;
+    text-align: left;
+}
 
 .description-title .brand {
     color: var(--color-primary-light);
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.15;
+    text-transform: capitalize;
+}
+
+.description-text {
+    font-size: 22px;
+    line-height: 1.72;
+}
+
+.description-text .wide {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.72;
+    text-transform: capitalize;
 }
 
 /* Advantages section */
+.advantages-title {
+    font-family: 'Play', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: center;
+}
+
 .advantages-title .brand {
     color: var(--color-primary-light);
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.15;
+    /* text-align: center; */
+    white-space: pre-line;
 }
 
 .advantages-text {
     color: var(--color-secondary-black);
+    line-height: 1.33;
 }
 
 /* Procedures section */
+.procedures-title {
+    font-family: 'Play', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: center;
+}
+
 .procedures-title .brand {
     color: var(--color-primary-light);
 }
@@ -82,12 +185,23 @@ address {
 }
 
 /* Contacts section */
+.contacts-title {
+    font-family: 'Play', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: center;
+}
+
 .contacts-title .brand {
     color: var(--color-primary-light);
 }
 
 .contacts-text {
     color: var(--color-primary-white);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.17;
 }
 
 .contacts-text .brand {
@@ -98,8 +212,12 @@ address {
 .address-link {
     color: var(--color-primary-white);
     text-decoration: none;
+    font-size: 16px;
+    line-height: 1.17;
 }
 
 .address-copyright {
     color: var(--color-secondary-light-grey);
+    font-size: 13px;
+    line-height: 1.17;
 }
