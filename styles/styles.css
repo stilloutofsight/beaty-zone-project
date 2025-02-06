@@ -103,11 +103,11 @@ address {
     text-align: left;
 }
 
-.hero-text1 {
+p.hero-text {
     line-height: 1.17;
 }
 
-.hero-text2 {
+p.hero-text:last-child {
     color: var(--color-secondary-dark-grey);
     font-size: 12px;
     line-height: 1.5;
@@ -118,7 +118,7 @@ address {
     font-family: 'Play', sans-serif;
     font-weight: 700;
     font-size: 64px;
-    line-height: 1.15;
+    line-height: auto;
     text-align: left;
 }
 
@@ -127,7 +127,7 @@ address {
     font-family: 'Play', sans-serif;
     font-weight: 700;
     font-size: 64px;
-    line-height: 1.15;
+    line-height: auto;
     text-transform: capitalize;
 }
 
@@ -148,7 +148,7 @@ address {
     font-family: 'Play', sans-serif;
     font-size: 64px;
     font-weight: 700;
-    line-height: 1.15;
+    line-height: auto;
     text-align: center;
 }
 
@@ -157,9 +157,9 @@ address {
     font-family: 'Play', sans-serif;
     font-weight: 700;
     font-size: 64px;
-    line-height: 1.15;
-    /* text-align: center; */
-    white-space: pre-line;
+    line-height: auto;
+    text-align: center;
+    /* white-space: pre-line; */
 }
 
 .advantages-text {
@@ -172,7 +172,7 @@ address {
     font-family: 'Play', sans-serif;
     font-size: 64px;
     font-weight: 700;
-    line-height: 1.15;
+    line-height: auto;
     text-align: center;
 }
 
@@ -189,7 +189,7 @@ address {
     font-family: 'Play', sans-serif;
     font-size: 64px;
     font-weight: 700;
-    line-height: 1.15;
+    line-height: auto;
     text-align: center;
 }
 
