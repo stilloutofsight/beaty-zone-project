@@ -37,20 +37,52 @@
 }
 
 /* Base */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0;
     color: var(--color-primary-dark);
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 400;
+    line-height: 1.5;
+    /* remove(change to actual in landing line height) */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
 }
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 address {
     font-style: normal;
 }
+
+.section {
+    padding: 48px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
 
 /* Button */
 .button {
@@ -94,13 +126,14 @@ address {
 
 /* Hero section */
 .hero-title {
+    margin-bottom: 40px;
     color: var(--color-primary-light);
     font-family: 'Play', sans-serif;
     font-size: 140px;
     font-weight: 700;
     line-height: 0.81;
     text-transform: capitalize;
-    text-align: left;
+    /* text-align: left; перевірити чи ок флексами вирівнюється і видалити якщо не потрібно*/
 }
 
 p.hero-text {
@@ -114,12 +147,18 @@ p.hero-text:last-child {
 }
 
 /* Description section */
+
+.description-section {
+    padding-top: 0;
+}
+
 .description-title {
+    margin-bottom: 40px;
     font-family: 'Play', sans-serif;
     font-weight: 700;
     font-size: 64px;
     line-height: auto;
-    text-align: left;
+    /* text-align: left; перевірити чи ок флексами вирівнюється і видалити якщо не потрібно*/
 }
 
 .description-title .brand {
@@ -145,11 +184,12 @@ p.hero-text:last-child {
 
 /* Advantages section */
 .advantages-title {
+    margin-bottom: 48px;
     font-family: 'Play', sans-serif;
     font-size: 64px;
     font-weight: 700;
     line-height: auto;
-    text-align: center;
+    /* text-align: center; перевірити чи ок флексами вирівнюється і видалити якщо не потрібно*/
 }
 
 .advantages-title .brand {
@@ -159,7 +199,7 @@ p.hero-text:last-child {
     font-size: 64px;
     line-height: auto;
     text-align: center;
-    /* white-space: pre-line; */
+    /* white-space: pre-line; перевірити чи ок флексами вирівнюється і видалити якщо не потрібно*/
 }
 
 .advantages-text {
@@ -169,6 +209,7 @@ p.hero-text:last-child {
 
 /* Procedures section */
 .procedures-title {
+    margin-bottom: 48px;
     font-family: 'Play', sans-serif;
     font-size: 64px;
     font-weight: 700;
@@ -185,7 +226,13 @@ p.hero-text:last-child {
 }
 
 /* Contacts section */
+
+.contacts-section {
+    padding-bottom: 96px;
+}
+
 .contacts-title {
+    margin-bottom: 48px;
     font-family: 'Play', sans-serif;
     font-size: 64px;
     font-weight: 700;
