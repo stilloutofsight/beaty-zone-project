@@ -16,14 +16,21 @@
     font-display: swap;
     font-family: 'Roboto';
     font-weight: 400;
-    src: url('../fonts/roboto-v32-cyrillic_latin-regular.woff2') format('woff2');
+    src: url('../fonts/roboto-v47-cyrillic_latin-regular.woff2') format('woff2');
 }
 
 @font-face {
     font-display: swap;
     font-family: 'Roboto';
-    font-weight: 500;
-    src: url('../fonts/roboto-v32-cyrillic_latin-500.woff2') format('woff2');
+    font-weight: 600;
+    src: url('../fonts/roboto-v47-cyrillic_latin-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url('../fonts/roboto-v47-cyrillic_latin-700.woff2') format('woff2');
 }
 
 :root {
@@ -44,12 +51,12 @@
 
 body {
     margin: 0;
+    background-color: var(--color-primary-white);
     color: var(--color-primary-dark);
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.5;
-    /* remove(change to actual in landing line height) */
+    line-height: 1.17;
 }
 
 h1,
@@ -62,18 +69,14 @@ p {
     margin-top: 0;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
 address {
     font-style: normal;
 }
 
-.section {
-    padding: 48px 0;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -86,45 +89,83 @@ address {
 
 /* Button */
 .button {
+    margin-bottom: 14px;
+    padding: 16px 32px;
     color: var(--color-primary-white);
     background-color: var(--color-primary-light);
     border: 2px solid var(--color-primary-light);
     border-radius: 32px;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
-    line-height: 1.17;
 }
 
 .button:hover {
     color: var(--color-primary-dark);
     background-color: transparent;
-    font-weight: 500;
-    line-height: 1.17;
+    font-weight: 600;
 }
 
 /* Link */
 .link-header {
     color: var(--color-primary-dark);
     text-decoration: none;
-    line-height: 1.17;
 }
 
 .link-header:hover {
     color: var(--color-primary-light);
-    font-weight: 700;
-    line-height: 1.17;
 }
 
 .link-footer {
     color: var(--color-primary-white);
     font-size: 16px;
-    line-height: 1.17;
     text-decoration: none;
 }
 
+/* Header */
+.header-container {
+    display: flex;
+    /* Дописати як додам спрайти */
+}
+
+.header-nav {
+    display: flex;
+    /* Дописати як додам спрайти */
+}
+
+.header-menu {
+    display: flex;
+    /* Дописати як додам спрайти */
+}
+
+/* Section */
+.section {
+    padding: 48px 0;
+}
+
+.section-title {
+    margin-bottom: 48px;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.15;
+}
+
+.section-title .brand {
+    color: var(--color-primary-light);
+}
+
+.section-title.centered {
+    text-align: center;
+}
+
 /* Hero section */
+.hero-section {
+    padding-top: 123px;
+    padding-bottom: 127px;
+}
+
 .hero-title {
     margin-bottom: 40px;
     color: var(--color-primary-light);
@@ -136,37 +177,66 @@ address {
     /* text-align: left; перевірити чи ок флексами вирівнюється і видалити якщо не потрібно*/
 }
 
-p.hero-text {
+.hero-text {
     line-height: 1.17;
+    margin-bottom: 16px;
 }
 
-p.hero-text:last-child {
+.hero-text:last-child {
     color: var(--color-secondary-dark-grey);
     font-size: 12px;
     line-height: 1.5;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 /* Description section */
 
 .description-section {
     padding-top: 0;
+    padding-bottom: 88px;
+}
+
+.description-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.description-content {
+    max-width: 709px;
+}
+
+.description-images {
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.description-client-image {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 327px;
+    /* height: 327px; */
+    border-radius: 50%;
+}
+
+.description-client-image:first-child {
+    align-self: flex-start;
+}
+
+.description-client-image:last-child {
+    align-self: flex-end;
+    margin-left: auto;
 }
 
 .description-title {
+    padding-top: 40px;
     margin-bottom: 40px;
-    font-family: 'Play', sans-serif;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: auto;
-    /* text-align: left; перевірити чи ок флексами вирівнюється і видалити якщо не потрібно*/
 }
 
 .description-title .brand {
-    color: var(--color-primary-light);
-    font-family: 'Play', sans-serif;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: auto;
     text-transform: capitalize;
 }
 
@@ -175,31 +245,22 @@ p.hero-text:last-child {
     line-height: 1.72;
 }
 
+.description-text:last-child {
+    margin-bottom: 0;
+}
+
 .description-text .wide {
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 1.72;
+    font-weight: 600;
     text-transform: capitalize;
 }
 
 /* Advantages section */
-.advantages-title {
-    margin-bottom: 48px;
-    font-family: 'Play', sans-serif;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: auto;
-    /* text-align: center; перевірити чи ок флексами вирівнюється і видалити якщо не потрібно*/
+.advantages-section {
+    padding-top: 88px;
 }
 
-.advantages-title .brand {
-    color: var(--color-primary-light);
-    font-family: 'Play', sans-serif;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: auto;
-    text-align: center;
-    /* white-space: pre-line; перевірити чи ок флексами вирівнюється і видалити якщо не потрібно*/
+.advantages-title {
+    margin-bottom: 48px;
 }
 
 .advantages-text {
@@ -210,15 +271,6 @@ p.hero-text:last-child {
 /* Procedures section */
 .procedures-title {
     margin-bottom: 48px;
-    font-family: 'Play', sans-serif;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: auto;
-    text-align: center;
-}
-
-.procedures-title .brand {
-    color: var(--color-primary-light);
 }
 
 .procedures-text {
@@ -233,15 +285,6 @@ p.hero-text:last-child {
 
 .contacts-title {
     margin-bottom: 48px;
-    font-family: 'Play', sans-serif;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: auto;
-    text-align: center;
-}
-
-.contacts-title .brand {
-    color: var(--color-primary-light);
 }
 
 .contacts-text {

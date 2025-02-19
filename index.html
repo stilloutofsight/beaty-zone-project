@@ -10,38 +10,40 @@
   <body>
     <header>
       <div class="container">
-        <nav>
-          <a href="/"
-            ><img src="./images/logo.svg" alt="Логотип beauty zone"
-          /></a>
-          <ul>
-            <li>
-              <a class="link-header" href="#description-section">Про нас</a>
-            </li>
-            <li>
-              <a class="link-header" href="#advantages-section">Чому ми</a>
-            </li>
-            <li>
-              <a class="link-header" href="#procedures-section"
-                >Наші процедури</a
-              >
-            </li>
-            <li>
-              <a class="link-header" href="#contacts-section">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <address>
-          <a class="link-header" href="tel:+380960000007">
-            <!-- Phone icon -->
-          </a>
-          <a class="link-header" href="#"><!-- facebook icon --></a>
-          <a class="link-header" href="#"><!-- instagram icon --></a>
-        </address>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="/"
+              ><img src="./images/logo.svg" alt="Логотип beauty zone"
+            /></a>
+            <ul class="header-menu">
+              <li>
+                <a class="link-header" href="#description-section">Про нас</a>
+              </li>
+              <li>
+                <a class="link-header" href="#advantages-section">Чому ми</a>
+              </li>
+              <li>
+                <a class="link-header" href="#procedures-section"
+                  >Наші процедури</a
+                >
+              </li>
+              <li>
+                <a class="link-header" href="#contacts-section">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <address>
+            <a class="link-header" href="tel:+380960000007">
+              <!-- Phone icon -->
+            </a>
+            <a class="link-header" href="#"><!-- facebook icon --></a>
+            <a class="link-header" href="#"><!-- instagram icon --></a>
+          </address>
+        </div>
       </div>
     </header>
     <main>
-      <section>
+      <section class="hero-section">
         <div class="container">
           <p class="hero-text">Косметологічна клініка</p>
           <h1 class="hero-title" lang="en">beauty zone</h1>
@@ -53,32 +55,43 @@
       </section>
       <section class="description-section section" id="description-section">
         <div class="container">
-          <h2 class="description-title">
-            Перевтілюйтесь в <span class="brand" lang="en">beauty zone!</span>
-          </h2>
-          <div class="description-text">
-            <p>
-              Наша косметологічна клініка пропонує вам професійні послуги з
-              догляду за шкірою обличчя та тіла.
-            </p>
-            <p>
-              B <span class="wide" lang="en">beauty zone</span> ми гарантуємо
-              найвищі стандарти якості та приємний сервіс. Наші косметологічні
-              процедури та препарати допоможуть вам підтримувати свою красу та
-              молодість.
-            </p>
-            <p>З нами краса назавжди!</p>
+          <div class="description-container">
+            <div class="description-content">
+              <h2 class="description-title section-title">
+                Перевтілюйтесь в
+                <span class="brand" lang="en">beauty zone!</span>
+              </h2>
+              <p class="description-text">
+                Наша косметологічна клініка пропонує вам професійні послуги
+                <br />з догляду за шкірою обличчя та тіла.
+              </p>
+              <p class="description-text">
+                B <span class="wide" lang="en">beauty zone</span> ми гарантуємо
+                найвищі стандарти якості <br />та приємний сервіс. Наші
+                косметологічні процедури та препарати допоможуть вам
+                підтримувати свою красу та молодість. <br />З нами краса
+                назавжди!
+              </p>
+              <!-- Вирішити як краще зробити щоб не юзати <br>  -->
+            </div>
+            <div class="description-images">
+              <img
+                class="description-client-image"
+                src="./images/client-woman1.jpg"
+                alt="Клієнтка до процедури"
+              />
+              <img
+                class="description-client-image"
+                src="./images/client-woman2.jpg"
+                alt="Клієнтка після процедури"
+              />
+            </div>
           </div>
-          <img src="./images/client-woman1.jpg" alt="Клієнтка до процедури" />
-          <img
-            src="./images/client-woman2.jpg"
-            alt="Клієнтка після процедури"
-          />
         </div>
       </section>
-      <section class="section" id="advantages-section">
+      <section class="advantages-section section" id="advantages-section">
         <div class="container">
-          <h2 class="advantages-title">
+          <h2 class="advantages-title section-title centered">
             Чому люди <span class="brand">обирають нас</span>
           </h2>
           <ul>
@@ -114,7 +127,7 @@
       </section>
       <section class="section" id="procedures-section">
         <div class="container">
-          <h2 class="procedures-title">
+          <h2 class="procedures-title section-title centered">
             Наші <span class="brand">процедури</span>
           </h2>
           <ul>
@@ -139,7 +152,7 @@
       </section>
       <section class="contacts-section section" id="contacts-section">
         <div class="container">
-          <h2 class="contacts-title">
+          <h2 class="contacts-title section-title centered">
             Як нас <span class="brand">знайти</span>
           </h2>
           <iframe
